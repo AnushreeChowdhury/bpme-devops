@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="OrderProject.xpdl#_sBKqZRKhEeuS6o-c-TrYrQ?p=OrderProject%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=OrderProject%3a%3aUpdateOrder%26n=ModifyData?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri=".default/OrderProject/UpdateOrder/ModifyData/ModifyData.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="OrderProject.xpdl#_sBKqgRKhEeuS6o-c-TrYrQ?p=OrderProject%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=OrderProject%3a%3aUpdateOrder%26n=Order?" name="data.Order" label="Order" dataType="uml:Class OrderCaseModel.bom#_tNFnwBKdEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.ordercasemodel%26n=Order?" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_lbnJgPXsEeu9D7SCCw2GtA">
+      <form:source target="data.Order" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Order.value"/>
+      <form:destination target="pane.Order" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.Order.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_lbra8PXsEeu9D7SCCw2GtA">
+      <form:source target="pane.Order" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value OrderCaseModel.bom#_z14gsBKdEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=productName?" data="form.pane.Order.value.productName"/>
+      <form:destination target="control.Order_productName" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Order_productName.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_lbwTcPXsEeu9D7SCCw2GtA">
+      <form:source target="pane.Order" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value OrderCaseModel.bom#_1fF6MBKdEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=quantity?" data="form.pane.Order.value.quantity"/>
+      <form:destination target="control.Order_quantity" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Order_quantity.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_lbyvsPXsEeu9D7SCCw2GtA">
+      <form:source target="pane.Order" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value OrderCaseModel.bom#_AvYisBKeEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=orderID?" data="form.pane.Order.value.orderID"/>
+      <form:destination target="control.Order_orderID" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Order_orderID.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_lb0k4PXsEeu9D7SCCw2GtA">
+      <form:source target="pane.Order" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value OrderCaseModel.bom#_OXq9UBKeEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=caseState1?" data="form.pane.Order.value.caseState1"/>
+      <form:destination target="control.Order_caseState1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Order_caseState1.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Modify Data</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:pane generated="true" generatorSource="OrderProject.xpdl#_sBKqgRKhEeuS6o-c-TrYrQ?p=OrderProject%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=OrderProject%3a%3aUpdateOrder%26n=Order?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class OrderCaseModel.bom#_tNFnwBKdEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aClass%26q=com.example.ordercasemodel%26n=Order?" name="pane.Order" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Order</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="OrderCaseModel.bom#_z14gsBKdEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=productName?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Order_productName">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>ProductName</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="OrderCaseModel.bom#_1fF6MBKdEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=quantity?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Order_quantity">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Quantity</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="OrderCaseModel.bom#_AvYisBKeEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=orderID?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Order_orderID">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>OrderID</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="OrderCaseModel.bom#_OXq9UBKeEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aProperty%26q=com.example.ordercasemodel%3a%3aOrder%26n=caseState1?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Order_caseState1">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>OrderCaseModel.bom#_bgzWwBKeEeuS6o-c-TrYrQ?p=OrderCaseModel%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.example.ordercasemodel%26n=StatesOfOrder?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>caseState1</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>
