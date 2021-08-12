@@ -1,0 +1,22 @@
+{
+  "control_Policy_startDate_label": "Start Date",
+  "control_Policy_vehicleValue_label": "VehicleValue",
+  "pane_content_label": "Delete Policy?",
+  "control_Policy_model_label": "Model",
+  "control_Policy_policyState_label": "PolicyState",
+  "pane_toolbar_label": "Toolbar",
+  "control_Policy_policyState_property_choiceLabels_1": "Expired",
+  "pane_messages_label": "Invalid Entries",
+  "control_Policy_policyState_property_choiceLabels_0": "Current",
+  "control_Policy_vehicleRegistration_label": "VehicleRegistration",
+  "form_validation_error_message": "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "control_Policy_excess_label": "Excess",
+  "form_action_error_message": "Error in script for action {0} ({1}): {2}",
+  "pane_Policy_label": "Policy",
+  "control_Policy_manufacturer_label": "Manufacturer",
+  "control_cancel_label": "Cancel",
+  "form_required_message": "{0} is a required field.",
+  "control_Policy_durationMonths_label": "Duration(Months)",
+  "control_Policy_policyId_label": "PolicyId",
+  "control_submit_label": "Submit"
+}

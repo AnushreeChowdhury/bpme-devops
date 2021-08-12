@@ -1,0 +1,1001 @@
+{
+  "bindings": [],
+  "rules": [],
+  "name": "ModifyData",
+  "type": "form",
+  "reverseBindings": [],
+  "formModelId": "_5RrPsPn3Eeuuh9nQQEuk5Q",
+  "formPathSegmentCount": 5,
+  "formatVersion": "11.0.0.044",
+  "bomJsFiles": [
+    "com.example.fnoldata_1/bom-js/com.fnoldata.js"
+  ],
+  "styleName": null,
+  "genCssClass": "f1e32e44c-c5a1-4ce0-a51e-f5e89cd2d1ca",
+  "labelPosition": "top",
+  "externalResources": [
+    {
+      "name": "",
+      "uri": "ModifyData.gwt.js",
+      "localized": false
+    },
+    {
+      "name": null,
+      "uri": "ModifyData.gwt.css",
+      "localized": false
+    },
+    {
+      "name": "resource.common",
+      "uri": "pathmap://FORMS_RESOURCES/common.properties",
+      "localized": true
+    },
+    {
+      "name": "resource.form",
+      "uri": "ModifyData.properties",
+      "localized": true
+    }
+  ],
+  "data": [
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "data.Counterparty",
+      "type": "data",
+      "reverseBindings": [],
+      "datumType": "com.fnoldata.Counterparty",
+      "label": "Counterparty",
+      "inout": "INOUT",
+      "array": false,
+      "decimalPlaces": 0,
+      "length": 0,
+      "primitive": false
+    }
+  ],
+  "controlRefs": [
+    {
+      "name": "control.Counterparty_counterpartyId",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_firstName",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_secondName",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_address",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_postcode",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_descriptionOfIncident",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_claimAmount",
+      "type": "control"
+    },
+    {
+      "name": "control.Counterparty_counterpartyState",
+      "type": "control"
+    },
+    {
+      "name": "control.cancel",
+      "type": "control"
+    },
+    {
+      "name": "control.submit",
+      "type": "control"
+    }
+  ],
+  "rootPaneRefs": [
+    {
+      "name": "pane.content",
+      "type": "pane"
+    },
+    {
+      "name": "pane.toolbar",
+      "type": "pane"
+    },
+    {
+      "name": "pane.messages",
+      "type": "pane"
+    }
+  ],
+  "control": [
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.Counterparty_counterpartyId",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "counterpartyId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_counterpartyId__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "firstName"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_firstName",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "firstName"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_firstName__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "secondName"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_secondName",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "secondName"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_secondName__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "address"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_address",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "address"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_address__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "postcode"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_postcode",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "postcode"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_postcode__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "descriptionOfIncident"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_descriptionOfIncident",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "descriptionOfIncident"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_descriptionOfIncident__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "claimAmount"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_claimAmount",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimAmount"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Counterparty_claimAmount__float",
+          "message": "",
+          "messageRef": "resource.common.validation_decimal_floating_point",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 0,
+      "propSetTextDisLen": 0,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": true,
+      "propSetFormat": "",
+      "propSetFormatRef": "resource.common.format_decimal"
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "counterpartyState"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Counterparty_counterpartyState",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "counterpartyState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.optionlist",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": true,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetChoiceListValues": [
+        "CURRENT",
+        "HISTORIC"
+      ],
+      "propSetChoiceListLabels": [
+        "Current",
+        "Historic"
+      ],
+      "propSetChoiceListLabelsRef": "",
+      "propSetOptionListMultiSelect": false
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "cancel",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.cancel",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "peripheral"
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "submit",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.submit",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "primary"
+    }
+  ],
+  "pane": [
+    {
+      "bindings": [
+        {
+          "name": "control.Counterparty_counterpartyId",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "counterpartyId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_firstName",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "firstName"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_secondName",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "secondName"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_address",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "address"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_postcode",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "postcode"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_descriptionOfIncident",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "descriptionOfIncident"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_claimAmount",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimAmount"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Counterparty_counterpartyState",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "counterpartyState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "data.Counterparty",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "pane.Counterparty",
+      "type": "pane",
+      "reverseBindings": [
+        {
+          "name": "control.Counterparty_firstName",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "firstName"
+          ]
+        },
+        {
+          "name": "control.Counterparty_secondName",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "secondName"
+          ]
+        },
+        {
+          "name": "control.Counterparty_address",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "address"
+          ]
+        },
+        {
+          "name": "control.Counterparty_postcode",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "postcode"
+          ]
+        },
+        {
+          "name": "control.Counterparty_descriptionOfIncident",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "descriptionOfIncident"
+          ]
+        },
+        {
+          "name": "control.Counterparty_claimAmount",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "claimAmount"
+          ]
+        },
+        {
+          "name": "control.Counterparty_counterpartyState",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "counterpartyState"
+          ]
+        },
+        {
+          "name": "data.Counterparty",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": "com.fnoldata.Counterparty",
+      "concreteClassifierNames": [
+        "com.fnoldata.Counterparty"
+      ],
+      "concreteClassifierLabels": [
+        "Counterparty"
+      ],
+      "children": [
+        {
+          "name": "control.Counterparty_counterpartyId",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_firstName",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_secondName",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_address",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_postcode",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_descriptionOfIncident",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_claimAmount",
+          "type": "control"
+        },
+        {
+          "name": "control.Counterparty_counterpartyState",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.content",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "top",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [
+        {
+          "name": "pane.Counterparty",
+          "type": "pane"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.toolbar",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.horizontal",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "toolbar",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [
+        {
+          "name": "control.cancel",
+          "type": "control"
+        },
+        {
+          "name": "control.submit",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.messages",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.messages",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "top",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {},
+      "propSetMessagesPaneSuppressValidationMessages": false
+    }
+  ],
+  "useCORef": true,
+  "transformationType": "java",
+  "libraries": {}
+}

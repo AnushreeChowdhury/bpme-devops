@@ -1,0 +1,1099 @@
+{
+  "bindings": [],
+  "rules": [],
+  "name": "AddHocFraudCheck",
+  "type": "form",
+  "reverseBindings": [],
+  "formModelId": "_52dXwPn3Eeuuh9nQQEuk5Q",
+  "formPathSegmentCount": 5,
+  "formatVersion": "11.0.0.044",
+  "bomJsFiles": [
+    "com.example.fnoldata_1/bom-js/com.fnoldata.js"
+  ],
+  "styleName": null,
+  "genCssClass": "fc11bc17c-e8c3-4fa1-921f-c91ba3172577",
+  "labelPosition": "top",
+  "externalResources": [
+    {
+      "name": "",
+      "uri": "AddHocFraudCheck.gwt.js",
+      "localized": false
+    },
+    {
+      "name": null,
+      "uri": "AddHocFraudCheck.gwt.css",
+      "localized": false
+    },
+    {
+      "name": "resource.common",
+      "uri": "pathmap://FORMS_RESOURCES/common.properties",
+      "localized": true
+    },
+    {
+      "name": "resource.form",
+      "uri": "AddHocFraudCheck.properties",
+      "localized": true
+    }
+  ],
+  "data": [
+    {
+      "bindings": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "data.UpdateClaim",
+      "type": "data",
+      "reverseBindings": [],
+      "datumType": "com.fnoldata.Claim",
+      "label": "Update Claim",
+      "inout": "IN",
+      "array": false,
+      "decimalPlaces": 0,
+      "length": 0,
+      "primitive": false
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "data.OriginalClaim",
+      "type": "data",
+      "reverseBindings": [],
+      "datumType": "com.fnoldata.Claim",
+      "label": "Original Claim",
+      "inout": "IN",
+      "array": false,
+      "decimalPlaces": 0,
+      "length": 0,
+      "primitive": false
+    }
+  ],
+  "controlRefs": [
+    {
+      "name": "control.UpdateClaim_claimId",
+      "type": "control"
+    },
+    {
+      "name": "control.UpdateClaim_timeofincident",
+      "type": "control"
+    },
+    {
+      "name": "control.UpdateClaim_descriptionOfLoss",
+      "type": "control"
+    },
+    {
+      "name": "control.UpdateClaim_claimamount",
+      "type": "control"
+    },
+    {
+      "name": "control.UpdateClaim_claimState",
+      "type": "control"
+    },
+    {
+      "name": "control.OriginalClaim_claimId",
+      "type": "control"
+    },
+    {
+      "name": "control.OriginalClaim_timeofincident",
+      "type": "control"
+    },
+    {
+      "name": "control.OriginalClaim_descriptionOfLoss",
+      "type": "control"
+    },
+    {
+      "name": "control.OriginalClaim_claimamount",
+      "type": "control"
+    },
+    {
+      "name": "control.OriginalClaim_claimState",
+      "type": "control"
+    },
+    {
+      "name": "control.cancel",
+      "type": "control"
+    },
+    {
+      "name": "control.close",
+      "type": "control"
+    },
+    {
+      "name": "control.submit",
+      "type": "control"
+    }
+  ],
+  "rootPaneRefs": [
+    {
+      "name": "pane.content",
+      "type": "pane"
+    },
+    {
+      "name": "pane.toolbar",
+      "type": "pane"
+    },
+    {
+      "name": "pane.messages",
+      "type": "pane"
+    }
+  ],
+  "control": [
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.UpdateClaim_claimId",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "UpdateClaim_claimId__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.UpdateClaim_timeofincident",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "timeofincident"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.datetime",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "UpdateClaim_timeofincident__datetime",
+          "message": "",
+          "messageRef": "resource.common.validation_datetime_format",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetMinRelative": true,
+      "propSetMaxRelative": true,
+      "propSetYearMin": -20,
+      "propSetYearMax": 20,
+      "propSetMinuteIncrement": 15
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.UpdateClaim_descriptionOfLoss",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "descriptionOfLoss"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "UpdateClaim_descriptionOfLoss__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.UpdateClaim_claimamount",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimamount"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "UpdateClaim_claimamount__float",
+          "message": "",
+          "messageRef": "resource.common.validation_decimal_floating_point",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 0,
+      "propSetTextDisLen": 0,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": true,
+      "propSetFormat": "",
+      "propSetFormatRef": "resource.common.format_decimal"
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.UpdateClaim_claimState",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.optionlist",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetChoiceListValues": [
+        "SUBMITTED",
+        "APPROVED",
+        "PAID",
+        "REJECTED",
+        "FINALIZED"
+      ],
+      "propSetChoiceListLabels": [
+        "Submitted",
+        "Approved",
+        "Paid",
+        "Rejected",
+        "Finalized"
+      ],
+      "propSetChoiceListLabelsRef": "",
+      "propSetOptionListMultiSelect": false
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.OriginalClaim_claimId",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "OriginalClaim_claimId__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.OriginalClaim_timeofincident",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "timeofincident"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.datetime",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "OriginalClaim_timeofincident__datetime",
+          "message": "",
+          "messageRef": "resource.common.validation_datetime_format",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetMinRelative": true,
+      "propSetMaxRelative": true,
+      "propSetYearMin": -20,
+      "propSetYearMax": 20,
+      "propSetMinuteIncrement": 15
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.OriginalClaim_descriptionOfLoss",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "descriptionOfLoss"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "OriginalClaim_descriptionOfLoss__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.OriginalClaim_claimamount",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimamount"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "OriginalClaim_claimamount__float",
+          "message": "",
+          "messageRef": "resource.common.validation_decimal_floating_point",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 0,
+      "propSetTextDisLen": 0,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": true,
+      "propSetFormat": "",
+      "propSetFormatRef": "resource.common.format_decimal"
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.OriginalClaim_claimState",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "claimState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.optionlist",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetChoiceListValues": [
+        "SUBMITTED",
+        "APPROVED",
+        "PAID",
+        "REJECTED",
+        "FINALIZED"
+      ],
+      "propSetChoiceListLabels": [
+        "Submitted",
+        "Approved",
+        "Paid",
+        "Rejected",
+        "Finalized"
+      ],
+      "propSetChoiceListLabelsRef": "",
+      "propSetOptionListMultiSelect": false
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "cancel",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.cancel",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "peripheral"
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "close",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.close",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "peripheral"
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "submit",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.submit",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "primary"
+    }
+  ],
+  "pane": [
+    {
+      "bindings": [
+        {
+          "name": "control.UpdateClaim_claimId",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.UpdateClaim_timeofincident",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "timeofincident"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.UpdateClaim_descriptionOfLoss",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "descriptionOfLoss"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.UpdateClaim_claimamount",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimamount"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.UpdateClaim_claimState",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "data.UpdateClaim",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "pane.UpdateClaim",
+      "type": "pane",
+      "reverseBindings": [
+        {
+          "name": "data.UpdateClaim",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": "com.fnoldata.Claim",
+      "concreteClassifierNames": [
+        "com.fnoldata.Claim"
+      ],
+      "concreteClassifierLabels": [
+        "Claim"
+      ],
+      "children": [
+        {
+          "name": "control.UpdateClaim_claimId",
+          "type": "control"
+        },
+        {
+          "name": "control.UpdateClaim_timeofincident",
+          "type": "control"
+        },
+        {
+          "name": "control.UpdateClaim_descriptionOfLoss",
+          "type": "control"
+        },
+        {
+          "name": "control.UpdateClaim_claimamount",
+          "type": "control"
+        },
+        {
+          "name": "control.UpdateClaim_claimState",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [
+        {
+          "name": "control.OriginalClaim_claimId",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.OriginalClaim_timeofincident",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "timeofincident"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.OriginalClaim_descriptionOfLoss",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "descriptionOfLoss"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.OriginalClaim_claimamount",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimamount"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.OriginalClaim_claimState",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "claimState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "data.OriginalClaim",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "pane.OriginalClaim",
+      "type": "pane",
+      "reverseBindings": [
+        {
+          "name": "data.OriginalClaim",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": "com.fnoldata.Claim",
+      "concreteClassifierNames": [
+        "com.fnoldata.Claim"
+      ],
+      "concreteClassifierLabels": [
+        "Claim"
+      ],
+      "children": [
+        {
+          "name": "control.OriginalClaim_claimId",
+          "type": "control"
+        },
+        {
+          "name": "control.OriginalClaim_timeofincident",
+          "type": "control"
+        },
+        {
+          "name": "control.OriginalClaim_descriptionOfLoss",
+          "type": "control"
+        },
+        {
+          "name": "control.OriginalClaim_claimamount",
+          "type": "control"
+        },
+        {
+          "name": "control.OriginalClaim_claimState",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.content",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "top",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [
+        {
+          "name": "pane.UpdateClaim",
+          "type": "pane"
+        },
+        {
+          "name": "pane.OriginalClaim",
+          "type": "pane"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.toolbar",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.horizontal",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "toolbar",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [
+        {
+          "name": "control.cancel",
+          "type": "control"
+        },
+        {
+          "name": "control.close",
+          "type": "control"
+        },
+        {
+          "name": "control.submit",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.messages",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.messages",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "top",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {},
+      "propSetMessagesPaneSuppressValidationMessages": false
+    }
+  ],
+  "useCORef": true,
+  "transformationType": "java",
+  "libraries": {}
+}

@@ -1,0 +1,20 @@
+{
+  "pane_content_label": "View Case",
+  "control_Policyholder_firstName_label": "First Name",
+  "control_Policyholder_postcode_label": "Postcode",
+  "control_Policyholder_dateOFBirth_label": "Date OF Birth",
+  "pane_Policyholder_label": "Policyholder",
+  "control_Policyholder_address_label": "Address",
+  "pane_toolbar_label": "Toolbar",
+  "pane_messages_label": "Invalid Entries",
+  "control_Policyholder_secondName_label": "Second Name",
+  "form_validation_error_message": "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "control_Policyholder_policyHolderId_label": "PolicyHolderId",
+  "form_action_error_message": "Error in script for action {0} ({1}): {2}",
+  "control_Policyholder_policyHolderState_property_choiceLabels_0": "Current",
+  "control_cancel_label": "Cancel",
+  "control_Policyholder_policyHolderState_property_choiceLabels_1": "Historic",
+  "form_required_message": "{0} is a required field.",
+  "control_Policyholder_policyHolderState_label": "PolicyHolderState",
+  "control_submit_label": "Submit"
+}

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" generated="true" id="_52dXwPn3Eeuuh9nQQEuk5Q" formatVersion="11.0.0">
+  <form:runtimeDependencies>
+    <form:package>com.fnoldata.FnoldataPackage</form:package>
+    <form:factory>com.fnoldata.FnoldataFactory</form:factory>
+    <form:file>com.example.fnoldata_1/bom-js/com.fnoldata.js</form:file>
+  </form:runtimeDependencies>
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="AddHocFraudCheck.properties" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.UpdateClaim" label="Update Claim" dataType="uml:Class FNOLData.bom#_BmBc4POUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aClass%26q=com.fnoldata%26n=Claim?" inout="IN"/>
+    <form:parameter generated="true" name="data.OriginalClaim" label="Original Claim" dataType="uml:Class FNOLData.bom#_BmBc4POUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aClass%26q=com.fnoldata%26n=Claim?" inout="IN"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_1KdAoPnAEeuuh9nQQEuk5Q">
+      <form:source target="data.UpdateClaim" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.UpdateClaim.value"></form:source>
+      <form:destination target="pane.UpdateClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.UpdateClaim.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_1Kfc4fnAEeuuh9nQQEuk5Q">
+      <form:source target="data.OriginalClaim" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.OriginalClaim.value"></form:source>
+      <form:destination target="pane.OriginalClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.OriginalClaim.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KdnsPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.UpdateClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_jm6IUPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=claimId?" data="form.pane.UpdateClaim.value.claimId"></form:source>
+      <form:destination target="control.UpdateClaim_claimId" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UpdateClaim_claimId.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KeOwPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.UpdateClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_5PyvgPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=timeofincident?" data="form.pane.UpdateClaim.value.timeofincident"></form:source>
+      <form:destination target="control.UpdateClaim_timeofincident" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UpdateClaim_timeofincident.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KeOwfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.UpdateClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_y2GCgPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=descriptionOfLoss?" data="form.pane.UpdateClaim.value.descriptionOfLoss"></form:source>
+      <form:destination target="control.UpdateClaim_descriptionOfLoss" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UpdateClaim_descriptionOfLoss.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1Ke10PnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.UpdateClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_2pro4Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=claimamount?" data="form.pane.UpdateClaim.value.claimamount"></form:source>
+      <form:destination target="control.UpdateClaim_claimamount" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UpdateClaim_claimamount.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1Kfc4PnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.UpdateClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_lS9acPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=claimState?" data="form.pane.UpdateClaim.value.claimState"></form:source>
+      <form:destination target="control.UpdateClaim_claimState" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.UpdateClaim_claimState.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KgrAPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.OriginalClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_jm6IUPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=claimId?" data="form.pane.OriginalClaim.value.claimId"></form:source>
+      <form:destination target="control.OriginalClaim_claimId" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.OriginalClaim_claimId.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KgrAfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.OriginalClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_5PyvgPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=timeofincident?" data="form.pane.OriginalClaim.value.timeofincident"></form:source>
+      <form:destination target="control.OriginalClaim_timeofincident" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.OriginalClaim_timeofincident.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KhSEPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.OriginalClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_y2GCgPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=descriptionOfLoss?" data="form.pane.OriginalClaim.value.descriptionOfLoss"></form:source>
+      <form:destination target="control.OriginalClaim_descriptionOfLoss" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.OriginalClaim_descriptionOfLoss.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1KhSEfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.OriginalClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_2pro4Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=claimamount?" data="form.pane.OriginalClaim.value.claimamount"></form:source>
+      <form:destination target="control.OriginalClaim_claimamount" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.OriginalClaim_claimamount.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_1Kh5IPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.OriginalClaim" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_lS9acPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aClaim%26n=claimState?" data="form.pane.OriginalClaim.value.claimState"></form:source>
+      <form:destination target="control.OriginalClaim_claimState" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.OriginalClaim_claimState.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Add Hoc Fraud Check</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class FNOLData.bom#_BmBc4POUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aClass%26q=com.fnoldata%26n=Claim?" name="pane.UpdateClaim" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Update Claim</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.UpdateClaim_claimId">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>ClaimId</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="UpdateClaim_claimId__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label ? context.control.label : context.control.name, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" readOnly="true" controlType="com.tibco.forms.controls.datetime" name="control.UpdateClaim_timeofincident">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Time of incident</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="UpdateClaim_timeofincident__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.label ? context.control.label : context.control.name] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.UpdateClaim_descriptionOfLoss">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Description Of Loss</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="UpdateClaim_descriptionOfLoss__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label ? context.control.label : context.control.name, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.UpdateClaim_claimamount">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Claim amount</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_decimal_floating_point" name="UpdateClaim_claimamount__float" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined'? context.value !== '' &amp;&amp; !isNaN(context.value) ? true : [context.control.label ? context.control.label : context.control.name] : context.value !== '' &amp;&amp; !isNaN(context.value);</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" readOnly="true" controlType="com.tibco.forms.controls.optionlist" name="control.UpdateClaim_claimState">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceValues>SUBMITTED</et:choiceValues>
+          <et:choiceValues>APPROVED</et:choiceValues>
+          <et:choiceValues>PAID</et:choiceValues>
+          <et:choiceValues>REJECTED</et:choiceValues>
+          <et:choiceValues>FINALIZED</et:choiceValues>
+          <et:choiceLabels>Submitted</et:choiceLabels>
+          <et:choiceLabels>Approved</et:choiceLabels>
+          <et:choiceLabels>Paid</et:choiceLabels>
+          <et:choiceLabels>Rejected</et:choiceLabels>
+          <et:choiceLabels>Finalized</et:choiceLabels>
+        </form:propertySet>
+        <form:label>ClaimState</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class FNOLData.bom#_BmBc4POUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aClass%26q=com.fnoldata%26n=Claim?" name="pane.OriginalClaim" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Original Claim</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.OriginalClaim_claimId">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>ClaimId</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="OriginalClaim_claimId__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label ? context.control.label : context.control.name, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" readOnly="true" controlType="com.tibco.forms.controls.datetime" name="control.OriginalClaim_timeofincident">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Time of incident</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="OriginalClaim_timeofincident__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.label ? context.control.label : context.control.name] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.OriginalClaim_descriptionOfLoss">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Description Of Loss</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="OriginalClaim_descriptionOfLoss__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label ? context.control.label : context.control.name, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.OriginalClaim_claimamount">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Claim amount</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_decimal_floating_point" name="OriginalClaim_claimamount__float" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined'? context.value !== '' &amp;&amp; !isNaN(context.value) ? true : [context.control.label ? context.control.label : context.control.name] : context.value !== '' &amp;&amp; !isNaN(context.value);</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" readOnly="true" controlType="com.tibco.forms.controls.optionlist" name="control.OriginalClaim_claimState">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceValues>SUBMITTED</et:choiceValues>
+          <et:choiceValues>APPROVED</et:choiceValues>
+          <et:choiceValues>PAID</et:choiceValues>
+          <et:choiceValues>REJECTED</et:choiceValues>
+          <et:choiceValues>FINALIZED</et:choiceValues>
+          <et:choiceLabels>Submitted</et:choiceLabels>
+          <et:choiceLabels>Approved</et:choiceLabels>
+          <et:choiceLabels>Paid</et:choiceLabels>
+          <et:choiceLabels>Rejected</et:choiceLabels>
+          <et:choiceLabels>Finalized</et:choiceLabels>
+        </form:propertySet>
+        <form:label>ClaimState</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

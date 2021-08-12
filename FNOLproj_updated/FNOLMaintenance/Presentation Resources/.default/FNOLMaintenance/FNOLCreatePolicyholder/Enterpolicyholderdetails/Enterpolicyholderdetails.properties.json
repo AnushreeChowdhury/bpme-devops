@@ -1,0 +1,20 @@
+{
+  "pane_content_label": "Enter Policy Holder Details",
+  "control_PolicyHolder_postcode_label": "Postcode",
+  "control_PolicyHolder_policyHolderState_property_choiceLabels_0": "Current",
+  "control_PolicyHolder_policyHolderState_property_choiceLabels_1": "Historic",
+  "pane_toolbar_label": "Toolbar",
+  "pane_messages_label": "Invalid Entries",
+  "control_PolicyHolder_firstName_label": "First Name",
+  "form_validation_error_message": "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "pane_PolicyHolder_label": "PolicyHolder",
+  "control_PolicyHolder_dateOFBirth_label": "Date OF Birth",
+  "control_PolicyHolder_policyHolderState_label": "PolicyHolderState",
+  "form_action_error_message": "Error in script for action {0} ({1}): {2}",
+  "control_PolicyHolder_policyHolderId_label": "PolicyHolderId",
+  "control_cancel_label": "Cancel",
+  "form_required_message": "{0} is a required field.",
+  "control_PolicyHolder_address_label": "Address",
+  "control_submit_label": "Submit",
+  "control_PolicyHolder_secondName_label": "Second Name"
+}

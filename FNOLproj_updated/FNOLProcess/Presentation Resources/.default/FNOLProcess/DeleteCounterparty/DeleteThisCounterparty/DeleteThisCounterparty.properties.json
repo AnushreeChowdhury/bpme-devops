@@ -1,0 +1,21 @@
+{
+  "pane_content_label": "Delete This Counterparty?",
+  "pane_Counterparty_label": "Counterparty",
+  "control_Counterparty_descriptionOfIncident_label": "DescriptionOfIncident",
+  "pane_toolbar_label": "Toolbar",
+  "pane_messages_label": "Invalid Entries",
+  "control_Counterparty_counterpartyState_label": "CounterpartyState",
+  "form_validation_error_message": "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "control_Counterparty_address_label": "Address",
+  "control_Counterparty_counterpartyId_label": "CounterpartyId",
+  "form_action_error_message": "Error in script for action {0} ({1}): {2}",
+  "control_cancel_label": "Cancel",
+  "control_Counterparty_firstName_label": "First Name",
+  "control_Counterparty_secondName_label": "Second Name",
+  "form_required_message": "{0} is a required field.",
+  "control_Counterparty_claimAmount_label": "ClaimAmount",
+  "control_Counterparty_postcode_label": "Postcode",
+  "control_submit_label": "Submit",
+  "control_Counterparty_counterpartyState_property_choiceLabels_0": "Current",
+  "control_Counterparty_counterpartyState_property_choiceLabels_1": "Historic"
+}

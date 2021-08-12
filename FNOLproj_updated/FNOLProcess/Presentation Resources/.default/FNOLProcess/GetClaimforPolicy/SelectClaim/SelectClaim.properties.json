@@ -1,0 +1,23 @@
+{
+  "pane_content_label": "Select Claim",
+  "pane_toolbar_label": "Toolbar",
+  "control_Claims_claimId_label": "ClaimId",
+  "pane_messages_label": "Invalid Entries",
+  "control_Index_label": "Index",
+  "control_Claims_claimamount_label": "Claim amount",
+  "form_validation_error_message": "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "pane_Claims_label": "Claims",
+  "control_Claims_claimState_label": "ClaimState",
+  "form_action_error_message": "Error in script for action {0} ({1}): {2}",
+  "pane_Claims_property_rowLabel": "{0}",
+  "control_Claims_claimState_property_choiceLabels_1": "Approved",
+  "control_Claims_timeofincident_label": "Time of incident",
+  "control_Claims_claimState_property_choiceLabels_2": "Paid",
+  "control_cancel_label": "Cancel",
+  "control_Claims_descriptionOfLoss_label": "Description Of Loss",
+  "form_required_message": "{0} is a required field.",
+  "control_Claims_claimState_property_choiceLabels_0": "Submitted",
+  "control_submit_label": "Submit",
+  "control_Claims_claimState_property_choiceLabels_3": "Rejected",
+  "control_Claims_claimState_property_choiceLabels_4": "Finalized"
+}

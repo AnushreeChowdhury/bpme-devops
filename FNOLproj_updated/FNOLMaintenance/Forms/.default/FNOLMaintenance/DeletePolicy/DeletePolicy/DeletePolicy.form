@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="FNOLMaintenance.xpdl#_8_wptfj0EeubGpJIKV_AxA?p=FNOLMaintenance%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=FNOLMaintenance%3a%3aDeletePolicy%26n=DeletePolicy?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri=".default/FNOLMaintenance/DeletePolicy/DeletePolicy/DeletePolicy.properties" sfRelative="true" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="FNOLMaintenance.xpdl#_8_wp0fj0EeubGpJIKV_AxA?p=FNOLMaintenance%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=FNOLMaintenance%3a%3aDeletePolicy%26n=Policy?" name="data.Policy" label="Policy" dataType="uml:Class FNOLData.bom#_AP8awPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aClass%26q=com.fnoldata%26n=Policy?" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_0--JYPnAEeuuh9nQQEuk5Q">
+      <form:source target="data.Policy" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.Policy.value"/>
+      <form:destination target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.Policy.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="sourceToDest" name="_0--JYfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_jJbiIPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=policyId?" data="form.pane.Policy.value.policyId"/>
+      <form:destination target="control.Policy_policyId" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_policyId.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0--wcPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_590OAPOWEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=startDate?" data="form.pane.Policy.value.startDate"/>
+      <form:destination target="control.Policy_startDate" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_startDate.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0--wcfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_T61rQPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=durationMonths?" data="form.pane.Policy.value.durationMonths"/>
+      <form:destination target="control.Policy_durationMonths" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_durationMonths.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0-_XgPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_cQPP8Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=vehicleRegistration?" data="form.pane.Policy.value.vehicleRegistration"/>
+      <form:destination target="control.Policy_vehicleRegistration" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_vehicleRegistration.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0-_XgfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_dCS_APa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=manufacturer?" data="form.pane.Policy.value.manufacturer"/>
+      <form:destination target="control.Policy_manufacturer" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_manufacturer.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0-_-kPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_jpQr8Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=model?" data="form.pane.Policy.value.model"/>
+      <form:destination target="control.Policy_model" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_model.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0-_-kfnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_mOfBwPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=excess?" data="form.pane.Policy.value.excess"/>
+      <form:destination target="control.Policy_excess" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_excess.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0_AloPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_r9734Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=vehicleValue?" data="form.pane.Policy.value.vehicleValue"/>
+      <form:destination target="control.Policy_vehicleValue" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_vehicleValue.value"/>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_0_BMsPnAEeuuh9nQQEuk5Q">
+      <form:source target="pane.Policy" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value FNOLData.bom#_kqco8POUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=policyState?" data="form.pane.Policy.value.policyState"/>
+      <form:destination target="control.Policy_policyState" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.Policy_policyState.value"/>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>Delete Policy?</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="top"/>
+    </form:defaults>
+    <form:pane generated="true" generatorSource="FNOLMaintenance.xpdl#_8_wp0fj0EeubGpJIKV_AxA?p=FNOLMaintenance%26s=Process%20Packages%26t=xpdl2%3aDataField%26q=FNOLMaintenance%3a%3aDeletePolicy%26n=Policy?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class FNOLData.bom#_AP8awPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aClass%26q=com.fnoldata%26n=Policy?" name="pane.Policy" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Policy</form:label>
+      <form:hint/>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="FNOLData.bom#_jJbiIPOUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=policyId?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" readOnly="true" controlType="com.tibco.forms.controls.textinput" name="control.Policy_policyId">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>PolicyId</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_590OAPOWEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=startDate?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" controlType="com.tibco.forms.controls.date" name="control.Policy_startDate">
+        <form:propertySet xsi:type="et:DatePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+        </form:propertySet>
+        <form:label>Start Date</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_T61rQPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=durationMonths?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Policy_durationMonths">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Duration(Months)</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_cQPP8Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=vehicleRegistration?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Policy_vehicleRegistration">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>VehicleRegistration</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_dCS_APa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=manufacturer?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Policy_manufacturer">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Manufacturer</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_jpQr8Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=model?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Policy_model">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Model</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_mOfBwPa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=excess?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Policy_excess">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Excess</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_r9734Pa5EeubGpJIKV_AxA?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=vehicleValue?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.Policy_vehicleValue">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>VehicleValue</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="FNOLData.bom#_kqco8POUEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aProperty%26q=com.fnoldata%3a%3aPolicy%26n=policyState?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.Policy_policyState">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceType>enumeration</et:choiceType>
+          <et:choiceEnumeration>FNOLData.bom#_BXPkkPOVEeurdN_RPEtZgw?p=FNOLData%26s=Business%20Objects%26t=uml%3aEnumeration%26q=com.fnoldata%26n=PolicyStates?</et:choiceEnumeration>
+        </form:propertySet>
+        <form:label>PolicyState</form:label>
+        <form:hint/>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>true</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

@@ -1,0 +1,1090 @@
+{
+  "bindings": [],
+  "rules": [],
+  "name": "EnterPolicyDetails",
+  "type": "form",
+  "reverseBindings": [],
+  "formModelId": "_3Jn-EPn3Eeuuh9nQQEuk5Q",
+  "formPathSegmentCount": 5,
+  "formatVersion": "11.0.0.044",
+  "bomJsFiles": [
+    "com.example.fnoldata_1/bom-js/com.fnoldata.js"
+  ],
+  "styleName": null,
+  "genCssClass": "f0c079ade-c955-4ef1-94f0-dbbf2e7655ef",
+  "labelPosition": "top",
+  "externalResources": [
+    {
+      "name": "",
+      "uri": "EnterPolicyDetails.gwt.js",
+      "localized": false
+    },
+    {
+      "name": null,
+      "uri": "EnterPolicyDetails.gwt.css",
+      "localized": false
+    },
+    {
+      "name": "resource.common",
+      "uri": "pathmap://FORMS_RESOURCES/common.properties",
+      "localized": true
+    },
+    {
+      "name": "resource.form",
+      "uri": "EnterPolicyDetails.properties",
+      "localized": true
+    }
+  ],
+  "data": [
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "data.Policy",
+      "type": "data",
+      "reverseBindings": [],
+      "datumType": "com.fnoldata.Policy",
+      "label": "Policy",
+      "inout": "INOUT",
+      "array": false,
+      "decimalPlaces": 0,
+      "length": 0,
+      "primitive": false
+    }
+  ],
+  "controlRefs": [
+    {
+      "name": "control.Policy_policyId",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_startDate",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_durationMonths",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_vehicleRegistration",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_manufacturer",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_model",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_excess",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_vehicleValue",
+      "type": "control"
+    },
+    {
+      "name": "control.Policy_policyState",
+      "type": "control"
+    },
+    {
+      "name": "control.cancel",
+      "type": "control"
+    },
+    {
+      "name": "control.submit",
+      "type": "control"
+    }
+  ],
+  "rootPaneRefs": [
+    {
+      "name": "pane.content",
+      "type": "pane"
+    },
+    {
+      "name": "pane.toolbar",
+      "type": "pane"
+    },
+    {
+      "name": "pane.messages",
+      "type": "pane"
+    }
+  ],
+  "control": [
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "control.Policy_policyId",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "policyId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_policyId__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": true,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "startDate"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_startDate",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "startDate"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.date",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_startDate__datetime",
+          "message": "",
+          "messageRef": "resource.common.validation_date_format",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetMinRelative": true,
+      "propSetMaxRelative": true,
+      "propSetYearMin": -20,
+      "propSetYearMax": 20
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "durationMonths"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_durationMonths",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "durationMonths"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_durationMonths__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "vehicleRegistration"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_vehicleRegistration",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "vehicleRegistration"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_vehicleRegistration__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "manufacturer"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_manufacturer",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "manufacturer"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_manufacturer__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "model"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_model",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "model"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_model__length",
+          "message": "",
+          "messageRef": "resource.common.validation_text_length",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 50,
+      "propSetTextDisLen": 40,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": false,
+      "propSetFormat": "",
+      "propSetFormatRef": ""
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "excess"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_excess",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "excess"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_excess__float",
+          "message": "",
+          "messageRef": "resource.common.validation_decimal_floating_point",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 0,
+      "propSetTextDisLen": 0,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": true,
+      "propSetFormat": "",
+      "propSetFormatRef": "resource.common.format_decimal"
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "vehicleValue"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_vehicleValue",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "vehicleValue"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.textinput",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [
+        {
+          "name": "Policy_vehicleValue__float",
+          "message": "",
+          "messageRef": "resource.common.validation_decimal_floating_point",
+          "when": "oncontrolchange",
+          "list": false
+        }
+      ],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetList": false,
+      "propSetMaxVisibleRows": 0,
+      "propSetTextBoxBaseMaxLen": 0,
+      "propSetTextDisLen": 0,
+      "propSetTextSecret": false,
+      "propSetTextNumeric": true,
+      "propSetFormat": "",
+      "propSetFormatRef": "resource.common.format_decimal"
+    },
+    {
+      "bindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "policyState"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "control.Policy_policyState",
+      "type": "control",
+      "reverseBindings": [
+        {
+          "name": "pane.Policy",
+          "type": "pane",
+          "sourceFeature": [
+            "value",
+            "policyState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.controls.optionlist",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": true,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetChoiceListValues": [
+        "CURRENT",
+        "EXPIRED"
+      ],
+      "propSetChoiceListLabels": [
+        "Current",
+        "Expired"
+      ],
+      "propSetChoiceListLabelsRef": "",
+      "propSetOptionListMultiSelect": false
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "cancel",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.cancel",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "peripheral"
+    },
+    {
+      "bindings": [],
+      "rules": [
+        {
+          "name": "submit",
+          "trigger": "select",
+          "cancelOnError": false
+        }
+      ],
+      "name": "control.submit",
+      "type": "control",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.controls.button",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "required": false,
+      "value": [],
+      "tabIndex": 0,
+      "alwaysRenderControl": false,
+      "propSetButtonType": "primary"
+    }
+  ],
+  "pane": [
+    {
+      "bindings": [
+        {
+          "name": "control.Policy_policyId",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "policyId"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_startDate",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "startDate"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_durationMonths",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "durationMonths"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_vehicleRegistration",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "vehicleRegistration"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_manufacturer",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "manufacturer"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_model",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "model"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_excess",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "excess"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_vehicleValue",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "vehicleValue"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "control.Policy_policyState",
+          "type": "control",
+          "sourceFeature": [
+            "value",
+            "policyState"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        },
+        {
+          "name": "data.Policy",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "rules": [],
+      "name": "pane.Policy",
+      "type": "pane",
+      "reverseBindings": [
+        {
+          "name": "control.Policy_startDate",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "startDate"
+          ]
+        },
+        {
+          "name": "control.Policy_durationMonths",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "durationMonths"
+          ]
+        },
+        {
+          "name": "control.Policy_vehicleRegistration",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "vehicleRegistration"
+          ]
+        },
+        {
+          "name": "control.Policy_manufacturer",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "manufacturer"
+          ]
+        },
+        {
+          "name": "control.Policy_model",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "model"
+          ]
+        },
+        {
+          "name": "control.Policy_excess",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "excess"
+          ]
+        },
+        {
+          "name": "control.Policy_vehicleValue",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "vehicleValue"
+          ]
+        },
+        {
+          "name": "control.Policy_policyState",
+          "type": "control",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value",
+            "policyState"
+          ]
+        },
+        {
+          "name": "data.Policy",
+          "type": "data",
+          "sourceFeature": [
+            "value"
+          ],
+          "destinationFeature": [
+            "value"
+          ]
+        }
+      ],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": "com.fnoldata.Policy",
+      "concreteClassifierNames": [
+        "com.fnoldata.Policy"
+      ],
+      "concreteClassifierLabels": [
+        "Policy"
+      ],
+      "children": [
+        {
+          "name": "control.Policy_policyId",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_startDate",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_durationMonths",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_vehicleRegistration",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_manufacturer",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_model",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_excess",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_vehicleValue",
+          "type": "control"
+        },
+        {
+          "name": "control.Policy_policyState",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.content",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.vertical",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "top",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [
+        {
+          "name": "pane.Policy",
+          "type": "pane"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.toolbar",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.horizontal",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "toolbar",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "left",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [
+        {
+          "name": "control.cancel",
+          "type": "control"
+        },
+        {
+          "name": "control.submit",
+          "type": "control"
+        }
+      ],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {}
+    },
+    {
+      "bindings": [],
+      "rules": [],
+      "name": "pane.messages",
+      "type": "pane",
+      "reverseBindings": [],
+      "componentType": "com.tibco.forms.panes.messages",
+      "shortLabelRef": "",
+      "labelRef": "",
+      "hintRef": "",
+      "enabled": true,
+      "visible": true,
+      "styleName": "",
+      "validations": [],
+      "inheritsDeferInitialization": false,
+      "readOnly": false,
+      "labelPosition": "top",
+      "dataType": null,
+      "concreteClassifierNames": [],
+      "concreteClassifierLabels": [],
+      "children": [],
+      "staticRendering": false,
+      "textOnly": false,
+      "deferRendering": false,
+      "deferInitialization": false,
+      "staticCustomContent": {},
+      "propSetMessagesPaneSuppressValidationMessages": false
+    }
+  ],
+  "useCORef": true,
+  "transformationType": "java",
+  "libraries": {}
+}
